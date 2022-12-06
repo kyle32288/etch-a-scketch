@@ -25,6 +25,9 @@ div{
     height: 35px;
     border: 1px solid;
 }
+.selected{
+    border: 3px solid;
+}
 #colors{
     padding-bottom:10px;
 }

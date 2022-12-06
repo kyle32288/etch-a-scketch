@@ -9,9 +9,11 @@ function addColor(c){
 }
 function pickColor(color){
     myColor = color;
+    document.querySelectorAll('.color').forEach(c => c.classList.remove('selected'));
+    document.querySelector(`#${myColor}`).classList.add('selected');
 }
 function reset(e){
-    if (e.KeyCode = 'KeyC'){
+    if (e.code == 'KeyC'){
         boxes.forEach(box => box.style.backgroundColor = 'white')
     }
 }
@@ -25,6 +27,6 @@ for (let i=0; i < gridHeight; i++){
 document.querySelector('#grid').innerHTML = myHTML;
 const boxes = document.querySelectorAll('.box')
 colors.forEach(color => addColor(color))
-colors.forEach(color => document.querySelector(`#${color}`).addEventListener('click', e => myColor = (e.target.id)))
+colors.forEach(color => document.querySelector(`#${color}`).addEventListener('click', e => pickColor(e.target.id)))
 boxes.forEach(box => box.addEventListener('mouseover', e => e.target.style.backgroundColor = myColor))
 document.addEventListener('keydown', e => reset(e))
