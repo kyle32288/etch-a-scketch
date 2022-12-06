@@ -1,0 +1,27 @@
+div{
+    margin: 0;
+    padding: 0;
+}
+#grid{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    height: 35px;
+}
+.box{
+    width: 35px;
+    border: 1px solid;
+}
+.box:hover{
+    transition: background-color .1s;
+}
+#colors{
+    display: flex;
+}
+.color{
+    width: 35px;
+    height: 35px;
+    border: 1px solid;
+}
