@@ -8,11 +8,11 @@ div{
 }
 .row{
     display: flex;
-    height: 15px;
+    height: 5px;
     margin: auto;
 }
 .box{
-    width: 15px;
+    width: 5px;
     border: 1px solid;
 }
 .box:hover{
